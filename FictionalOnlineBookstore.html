@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document metadata: encoding, viewport for responsive layout, and title -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leaf & Spine Books</title>
+  <style>
+    /* Minimal styling for clarity; classes group elements for consistent presentation */
+    .container { max-width:960px; margin: 0 auto; padding: 1rem; font-family: system-ui, sans-serif; }
+    .brand { display: flex; align-items: center; gap: .75rem; }
+    .nav-list { list-style: none; padding: 0; display: flex; gap: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: .5rem; }
+    .muted { color: #555; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="brand">
+
+        <img src="logo.png" alt=""Leaf & Spine Books Logo" width="48" height=""48">
+        <h1>Leaf &amp; Spine Books</h1>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#new">New Releases</a></li>
+          <li><a href="#best">Bestsellers</a></li>
+          <li><a href="#genres">Genres</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SECTION: New Releases; class groups for styling, id enables linking -->
+      <section id="new" class="catalog">
+        <!-- H1 in header is the page title; section headings use h2/h3 for hierarchy -->
+        <h2>New Releases</h2>
+        <!-- UL/LI: Present a list of book cards -->
+        <ul class="grid" role="list">
+          <li class="card">
+            <img src="covers/river-song.jpg" alt="Cover of 'River Song' by A. Chen" width="180" height="270">
+            <h3>River Song</h3>
+            <p class="muted">A. Chen · Literary Fiction</p>
+            <p>An evocative journey along a changing coastline and the ties that bind a family.</p>
+          </li>
+          <li class="card">
+            <img src="covers/orbit.jpg" alt="Cover of 'Orbit' by M. Patel" width="180" height="270">
+            <h3>Orbit</h3>
+            <p class="muted">M. Patel · Science Fiction</p>
+            <p>When an orbital station goes silent, a pilot confronts the past to save the future.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SECTION: Bestsellers -->
+      <section id="best" class="catalog">
+        <h2>Bestsellers</h2>
+        <ul class="grid" role="list">
+          <li class="card">
+            <img src="covers/slow-flame.jpg" alt="Cover of 'Slow Flame' by R. Alvarez" width="180" height="270">
+            <h3>Slow Flame</h3>
+            <p class="muted">R. Alvarez · Mystery</p>
+            <p>A seaside cold case rekindles when a forgotten journal surfaces.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SECTION: Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email us at <a href="mailto:support@leafandspine.example">support@leafandspine.example</a></p>
+        <p class="muted">Note: This is a demo static page; links are illustrative.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Leaf &amp; Spine Books · <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a></p>
+    </footer>
+
+  </div>"
+</body>
+</html>
